@@ -1,0 +1,8 @@
+<div class="board">
+    <div class="lists-container">
+        <div *ngFor="let list of lists; let i = index" cdkDropList (cdkDropListDropped)="drop($event)" [cdkDropListConnectedTo]="getConnectedLists()">
+            <app-list [list]="list" (deleteListEvent)="onDeleteList(i)"></app-list>
+        </div>
+    </div>
+    <button (click)="addList()">ADD LIST</button>
+</div>

@@ -1,0 +1,12 @@
+<div class="list" cdkDropList (cdkDropListDropped)="drop($event)">
+    <div class="list-header">
+        <h3>{{ list.name }}</h3>
+        <button (click)="deleteList()">X</button>
+    </div>
+    <div class="cards-container">
+        <div *ngFor="let card of list.cards; let i = index" cdkDrag>
+            <app-card [card]="card" (deleteCardEvent)="onDeleteCard(i)"></app-card>
+        </div>
+    </div>
+    <button (click)="addCard()">+ Add Card</button>
+</div>
