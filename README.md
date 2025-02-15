@@ -1,8 +1,8 @@
-Vetty Dashboard
+# Vetty Dashboard
 
 This is a project management dashboard built with Angular 17. It allows users to create lists, add cards, and drag-and-drop cards between lists.
 
-Features
+# Features
 
 Add/Delete lists.
 
@@ -12,7 +12,7 @@ Drag-and-drop cards between lists.
 
 Persistence using local storage.
 
-How to Run
+# How to Run
 
 Prerequisites
 
@@ -24,7 +24,7 @@ To install Angular CLI, run:
 
 npm install -g @angular/cli
 
-Steps
+# Steps
 
 1.Clone the repository:
 
@@ -43,7 +43,7 @@ ng serve
 
 http://localhost:4200
 
-Usage
+# Usage
 
 Click ADD LIST to create a new list.
 
